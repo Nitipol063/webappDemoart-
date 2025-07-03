@@ -1,13 +1,34 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-    <base target="_top">
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>เว็บแอป</title>
+    <style>
+        /* CSS เพื่อให้ iframe เต็มหน้าจอและไม่มีขอบ */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden; /* ป้องกันการ scroll หน้าหลักโดยไม่จำเป็น */
+        }
+        .responsive-iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            border: none; /* เอาเส้นขอบออก */
+        }
+    </style>
 </head>
 <body>
-    <iframe style="width: 100%; height: 100vh;" scrolling="yes" src="https://script.google.com/macros/s/AKfycbwNVjmd88WJImIQNTFSAtJYvonOnISRIjYOOHwmvbnjADRhk9x4w8WRA0nX3pWliddN/exec" frameborder="0"></iframe>
+
+    <iframe class="responsive-iframe" src="https://script.google.com/macros/s/AKfycbwNVjmd88WJImIQNTFSAtJYvonOnISRIjYOOHwmvbnjADRhk9x4w8WRA0nX3pWliddN/exec">
+        เบราว์เซอร์ของคุณไม่รองรับ iframe
+    </iframe>
+
 </body>
 </html>
